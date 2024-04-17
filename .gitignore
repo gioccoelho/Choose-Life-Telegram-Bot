@@ -1,0 +1,5 @@
+#Ignore the virtual_environment folder
+virtual_environment
+
+#Ignore related API files
+.env
