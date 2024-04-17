@@ -24,7 +24,7 @@ messages = [
 def send_message(message):
     print(f'@{message.chat.username} {message.chat.first_name} {message.chat.last_name}: {message.text}')
     if message.text == 'choose':
-        bot_message = messages[random.randint(0, len(messages) - 1)]
+        bot_message = random.choice(messages)
     else:
         bot_message = 'You must type in \'choose\''
     bot.send_message(message.chat.id, bot_message)
